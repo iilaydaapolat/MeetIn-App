@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="20dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginRight="25dp"
+    android:layout_marginLeft="25dp"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/card_view1"
+        android:layout_width="match_parent"
+        android:layout_height="362dp">
+
+        <ImageView
+            android:id="@+id/image_contact"
+            android:layout_width="278dp"
+            android:layout_height="167dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile_image"></ImageView>
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="143dp"
+            android:gravity="center"
+            android:layout_height="47dp"
+            android:layout_marginStart="105dp"
+            android:layout_marginTop="300dp"
+            android:background="@drawable/oval"
+            android:textAlignment="center"
+            android:textColor="#020202"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/name_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_contact"
+            android:layout_marginTop="5dp"
+            android:text="user name"
+            android:textAlignment="center"
+            android:textColor="#7986CB"
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+
+
+        <Button
+            android:id="@+id/call_btn"
+            android:layout_width="90dp"
+            android:layout_height="43dp"
+            android:layout_below="@+id/name_contact"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="65dp"
+            android:layout_marginBottom="14dp"
+            android:background="#1A237E"
+            android:drawableTop="@drawable/video_call"
+            android:drawableTint="@android:color/white"
+            android:padding="5dp"></Button>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
